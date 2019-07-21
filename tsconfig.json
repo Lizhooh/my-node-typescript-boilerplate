@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "allowSyntheticDefaultImports": true,
+      "noUnusedLocals": false,
+      "noUnusedParameters": true,
+      "strictNullChecks": false,
+      "noImplicitThis": false,
+      "sourceMap": true,
+      "baseUrl": "src",
+      "rootDir": ".",
+      "outDir": "build",
+      "jsx": "preserve",
+      "allowJs": true,
+      "resolveJsonModule": true,
+      "allowUnusedLabels": true,
+      "esModuleInterop": true,
+      "locale": "zh-CN",
+      "typeRoots": [
+        "node_modules/@types",
+        "global.d.ts",
+        "typings"
+      ],
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "paths": {
+
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "dist",
+      "build"
+    ],
+    "compileOnSave": false,
+    "include": [
+      "src",
+      "global.d.ts",
+      "typings"
+    ]
+  }
