@@ -7,11 +7,12 @@
   },
   "scripts": {
     "start": "concurrently \"npm run build:watch\" \"npm run watch\"",
+    "server": "node build/src/index.js",
+    "pm2": "pm2 start build/src/index.js -i 4",
     "watch": "nodemon build/src/index.js",
     "clean": "rimraf coverage build tmp",
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -w -p tsconfig.json",
-    "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "test": "jest --coverage",
     "testv": "majestic --port 3008 --noOpen"
   },

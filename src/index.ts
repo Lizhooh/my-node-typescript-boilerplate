@@ -5,10 +5,22 @@ import logger from 'koa-logger';
 const app = new Koa();
 const router = new Router();
 
-router.get('/users', ctx => {
+const rand = (min, max) => Math.random() * (max - min) + min | 0;
+
+router.get('/users', async ctx => {
+    let { limit, offset } = ctx.query;
+
+    limit = (limit * 1) || 10;
+    limit = Math.max(Math.min(limit, 50), 1);
+
+    await new Promise(rs => setTimeout(rs, rand(50, 50)));
+
     ctx.body = {
         status: 200,
-        data: 'abc',
+        data: {
+            limit,
+            offset,
+        },
         msg: '',
     };
 });
