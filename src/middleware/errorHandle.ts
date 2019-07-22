@@ -1,7 +1,6 @@
 import Koa from 'koa';
 import debug from 'debug';
 
-
 const log = debug('error');
 log.enabled = true;
 
@@ -11,7 +10,7 @@ export default () => async (ctx: Koa.Context, next) => {
         await next();
     }
     catch (err) {
-        log(err.message);
+        log(err);
 
         ctx.status = 500;
         ctx.body = {

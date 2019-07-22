@@ -9,7 +9,7 @@
       "noImplicitAny": false,
       "allowSyntheticDefaultImports": true,
       "noUnusedLocals": false,
-      "noUnusedParameters": true,
+      "noUnusedParameters": false,
       "strictNullChecks": false,
       "noImplicitThis": false,
       "sourceMap": true,
@@ -32,6 +32,8 @@
       "forceConsistentCasingInFileNames": true,
       "isolatedModules": false,
       "paths": {
+          "@/router": ["router/index"],
+          "@/router/*": ["router/*"]
       }
     },
     "exclude": [

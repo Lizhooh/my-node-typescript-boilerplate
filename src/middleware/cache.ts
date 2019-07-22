@@ -8,7 +8,7 @@ export default () => async (ctx: Koa.Context, next) => {
         return;
     }
     await next();
-    if (ctx.body.code === 200) {
+    if (ctx.body && ctx.body.code === 200) {
         cache.set(ctx.url, ctx.body);
     }
 };
