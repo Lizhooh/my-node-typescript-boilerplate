@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "es6",
+      "target": "es2017",
       "module": "commonjs",
       "moduleResolution": "node",
       "removeComments": true,
@@ -30,9 +30,8 @@
       "skipLibCheck": true,
       "strict": true,
       "forceConsistentCasingInFileNames": true,
-      "isolatedModules": true,
+      "isolatedModules": false,
       "paths": {
-
       }
     },
     "exclude": [
