@@ -452,6 +452,11 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
+"@types/debug@^4.1.4":
+  version "4.1.4"
+  resolved "https://registry.npm.taobao.org/@types/debug/download/@types/debug-4.1.4.tgz#56eec47706f0fd0b7c694eae2f3172e6b0b769da"
+  integrity sha1-Vu7Edwbw/Qt8aU6uLzFy5rC3ado=
+
 "@types/express-serve-static-core@*":
   version "4.16.7"
   resolved "https://registry.npm.taobao.org/@types/express-serve-static-core/download/@types/express-serve-static-core-4.16.7.tgz#50ba6f8a691c08a3dd9fa7fba25ef3133d298049"
