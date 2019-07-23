@@ -17,7 +17,6 @@ class UserRoute extends BaseRoute {
 }
 
 const r = new UserRoute();
-
 export default {
     list: r.list.bind(r),
 };
